@@ -1,0 +1,17 @@
+.log{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    margin-top: 80px;
+    border: 1px solid rgb(199, 199, 199);
+    border-radius: 25px;
+    font-family: dasis;
+}
+
+.forgot:hover{
+    color: orange;
+}
+
+/* .create:hover{
+    color: orange;
+} */

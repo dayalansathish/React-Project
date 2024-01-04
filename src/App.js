@@ -1,24 +1,38 @@
-import logo from './logo.svg';
 import './App.css';
+import './../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import { BrowserRouter, Route, Router, Routes } from 'react-router-dom';
+import Topbar from './Component/Topbar';
+import SignIn from './Component/SignIn';
+import Search from './Component/Search';
+import Home from './Component/Home';
+import Help from './Component/Help';
+import Cart from './Component/Cart';
+import Offers from './Component/Offers';
+import Mcdonalds from './Component/Mcdonalds';
+import Createaccount from './Component/Createaccount';
+ 
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <BrowserRouter>
+    <Topbar/>
+    <Routes>
+    <Route path='/' element={<Home/>}/>
+    <Route path='/Search' element={<Search/>}/>
+    <Route path='/Offers' element={<Offers/>}/>
+    <Route path='/SignIn' element={<SignIn/>}/>
+    <Route path='/Help' element={<Help/>}/>
+    <Route path='/Cart' element={<Cart/>}/>
+    <Route path='/Mcdonalds' element={<Mcdonalds/>}/>
+    <Route path='/create' element={<Createaccount/>}/>
+
+
+
+   
+    </Routes>
+    </BrowserRouter>
+    </>
   );
 }
 

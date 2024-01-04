@@ -1,0 +1,29 @@
+.font{
+    font-family: Montserrat;
+    border-bottom: 3px solid whitesmoke;
+}
+
+.overflow{
+    overflow: auto;
+    margin-bottom: 40px;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+    }
+
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.fa{
+    padding-left: 15px;
+}
+
+.cards:hover{
+    transform: scale(0.9);
+    transition: .4s ease-in-out;
+}
